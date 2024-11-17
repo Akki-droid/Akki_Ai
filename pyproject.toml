@@ -1,0 +1,20 @@
+[project]
+name = "akki_ai"
+version = "0.1.0"
+description = "Akki_ai using crewAI"
+authors = [{ name = "poetry", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.80.0,<1.0.0"
+]
+
+[project.scripts]
+akki_ai = "akki_ai.main:run"
+run_crew = "akki_ai.main:run"
+train = "akki_ai.main:train"
+replay = "akki_ai.main:replay"
+test = "akki_ai.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
